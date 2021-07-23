@@ -16,7 +16,7 @@ export default function Home(props) {
           {props.list.map(item=>(
             <li>
               <div>
-                <a href={`pais/${item.name}`}>
+                <a href={`pais/${item.alpha2Code}`}>
                   <img src={`${item.flag}`} width="150" alt="" /> <br/>
                 </a>
                   <p>{item.name}</p>
