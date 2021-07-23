@@ -6,7 +6,21 @@ const HomeMain = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: red;
+    background-color: ${({ theme }) => theme.colors.VeryLightGray_LightModeBackground};
+  }
+
+  main ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  main li {
+    display: inline-block;
+    margin: 20px;
+  }
+
+  main li div {
+    background-color: ${({ theme }) => theme.colors.White_DarkModeTextLightModeElements};
   }
 `
 
