@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import HomeMain from '../src/components/HomeMain' 
 import HomeHeader from '../src/components/HomeHeader'
+import Link from 'next/link'
 
 /*const Title = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
@@ -12,7 +13,9 @@ export default function Home(props) {
       <HomeHeader />
       <HomeMain>
         <main>
-          <ul>
+        <input type="text"/>
+        <Link href="/search">Buscar</Link>
+        <ul>
           {props.list.map(item=>(
             <li>
               <div>
